@@ -18,6 +18,7 @@ int main(void)
 	{
 		putchar(toupper(abc[i]));
 	}
+	putchar('\n');
 	return (0);
 }
 
