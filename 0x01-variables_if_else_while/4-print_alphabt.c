@@ -2,14 +2,14 @@
 #include <ctype.h>
 /**
  * main - entry point
- * Return : 0 when successful
+ * Return: 0 when successful
  */
 int main(void)
 {
 	char abc[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i < 25; i++)
+	for (i = 0; i < 26; i++)
 	{
 		if (abc[i] != 'e' && abc[i] != 'q')
 			putchar(abc[i]);
