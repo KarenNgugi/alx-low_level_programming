@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <ctype.h>
 
 /**
  * main - entry point
@@ -12,7 +11,7 @@ int main(void)
 	char abc[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i < 25; i++)
+	for (i = 0; i < 26; i++)
 	{
 		putchar(abc[i]);
 	}
