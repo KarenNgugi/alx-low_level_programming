@@ -11,18 +11,24 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		if (i != j) {
-                putchar(i % 10 + '0');
-                putchar(j % 10 + '0');
+		for (j = i + 1; j < 10; j++)
+		{
+			if (i != j)
+			{
+				putchar(i % 10 + '0');
+				putchar(j % 10 + '0');
 
-                if (i == 8) {
-                    if (j == i + 1) {
-                        continue;
-                    }
-                }
-                putchar(',');
-			putchar(' ');
-		    }
+				if (i == 8)
+				{
+					if (j == i + 1)
+					{
+						continue;
+					}
+				}
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
 	return (0);
 }
