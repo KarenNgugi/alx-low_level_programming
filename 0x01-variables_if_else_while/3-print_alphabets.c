@@ -3,8 +3,7 @@
 
 /**
  * main - entry point
- *
- * Return: return 0 if successful
+ * Return : 0 when successful
  */
 int main(void)
 {
@@ -14,5 +13,10 @@ int main(void)
 	{
 		putchar(abc[i]);
 	}
+	for (int i = 0; i < 25; i++)
+	{
+		putchar(toupper(abc[i]));
+	}
 	return (0);
 }
+
