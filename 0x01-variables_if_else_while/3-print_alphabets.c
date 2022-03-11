@@ -1,5 +1,5 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
+#include <ctype.h>
 
 /**
  * main - entry point
@@ -8,12 +8,13 @@
 int main(void)
 {
 	char abc[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (int i = 0; i < 25; i++)
+	for (i = 0; i < 25; i++)
 	{
 		putchar(abc[i]);
 	}
-	for (int i = 0; i < 25; i++)
+	for (i = 0; i < 25; i++)
 	{
 		putchar(toupper(abc[i]));
 	}

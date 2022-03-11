@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -9,8 +10,9 @@
 int main(void)
 {
 	char abc[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	for (int i = 0; i < 25; i++)
+	for (i = 0; i < 25; i++)
 	{
 		putchar(abc[i]);
 	}

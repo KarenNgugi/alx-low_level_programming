@@ -1,5 +1,5 @@
 #include <stdio.h>
-extern int* putchar ();
+#include <ctype.h>
 /**
  * main - entry point
  * Return : 0 when successful
