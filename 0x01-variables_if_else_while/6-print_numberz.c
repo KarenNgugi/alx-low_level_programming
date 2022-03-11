@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  * main - starting point
@@ -12,5 +13,6 @@ int main(void)
 	{
 		putchar(i);
 	}
+	putchar('\n');
 	return (0);
 }
