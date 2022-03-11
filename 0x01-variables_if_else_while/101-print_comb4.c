@@ -19,8 +19,10 @@ int main(void)
 					putchar(j % 10 + '0');
 					putchar(k % 10 + '0');
 
-					if ((i == 7) && (j == i + 1) && (k == j + 1)
-							continue;
+					if ((i == 7) && (j == i + 1) && (k == j + 1))
+					{
+						continue;
+					}
 
 					putchar(',');
 					putchar(' ');
