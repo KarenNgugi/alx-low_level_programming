@@ -14,7 +14,7 @@ int main(void)
 	{
 		putchar(abc[i]);
 	}
-	for (i = 0; i < 25; i++)
+	for (i = 0; i < 26; i++)
 	{
 		putchar(toupper(abc[i]));
 	}
