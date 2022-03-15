@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "_putchar.h"
+#include "main.h"
 
 int _abs(int);
 

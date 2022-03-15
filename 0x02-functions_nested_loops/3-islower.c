@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-#include "_putchar.h"
+#include "main.h"
 
 int _islower(int c);
 
