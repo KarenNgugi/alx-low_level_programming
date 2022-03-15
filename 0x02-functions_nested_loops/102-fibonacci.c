@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - entry point
@@ -18,7 +17,7 @@ int main(void)
 	{
 		sum = a + b;
 		a = b;
-		b = abs(sum);
+		b = sum;
 
 		if (count != 47)
 		{
