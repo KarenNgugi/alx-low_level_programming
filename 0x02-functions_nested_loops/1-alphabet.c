@@ -1,19 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 
-void print_alphabet(void);
-
-/**
- * main - main function
- *
- * Return: return 0 if successful
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
-
 /**
  * print_alphabet - secondary function
  *

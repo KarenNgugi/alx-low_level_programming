@@ -4,17 +4,6 @@
 void print_alphabet_x10(void);
 
 /**
- * main - program entry point
- *
- * Return: 0 when successful
- */
-int main(void)
-{
-	print_alphabet_x10();
-	return (0);
-}
-
-/**
  * print_alphabet_x10 - print alphabet 10 times
  */
 void print_alphabet_x10(void)
