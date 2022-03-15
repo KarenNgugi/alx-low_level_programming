@@ -9,9 +9,9 @@
 int main(void)
 {
 	int count = 0;
-	unsigned int a = 1, b = 2, sum;
+	long int a = 1, b = 2, sum;
 
-	printf("%u, %u, ", a, b);
+	printf("%lu, %lu, ", a, b);
 
 	while (count < 48)
 	{
@@ -21,11 +21,11 @@ int main(void)
 
 		if (count != 47)
 		{
-			printf("%u, ", b);
+			printf("%lu, ", b);
 		}
 		else
 		{
-			printf("%u", b);
+			printf("%lu", b);
 		}
 
 		count++;
