@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	long long int a = 1, b = 2, sum, n = 0;
+	unsigned long int a = 1, b = 2, sum, n = 0;
 
-	printf("%lld, %lld, ", a, b);
+	printf("%lu, %lu, ", a, b);
 
 	while (n < 98)
 	{
@@ -18,9 +18,9 @@ int main(void)
 		b = sum;
 
 		if (n != 97)
-			printf("%lld, ", sum);
+			printf("%lu, ", sum);
 		else
-			printf("%lld", sum);
+			printf("%lu", sum);
 
 		n++;
 	}
