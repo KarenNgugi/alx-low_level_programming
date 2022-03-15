@@ -63,6 +63,12 @@ void print_to_98(int n)
  */
 void putchar_many(int x)
 {
+	if (x < 0)
+	{
+		putchar('-');
+		x = -x;
+	}
+
 	if (x / 10)
 		putchar_many(x / 10);
 
