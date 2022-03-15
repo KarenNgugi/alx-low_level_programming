@@ -17,9 +17,9 @@ void print_to_98(int n)
 		for (i = n; i <= 98; i++)
 		{
 			if (i < 0)
-				putchar('-');
+				putchar_many(i);
 
-			if (i < 10)
+			else if (i < 10)
 				putchar('0' + abs(i));
 			else
 			{
