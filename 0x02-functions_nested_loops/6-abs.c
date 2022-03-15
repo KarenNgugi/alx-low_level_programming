@@ -4,7 +4,7 @@
 
 /**
  * _abs - returns absolute value of the number input
- * @int: number to be absoluted
+ * @x: number to be absoluted
  *
  * Return: returns absolute value
  */

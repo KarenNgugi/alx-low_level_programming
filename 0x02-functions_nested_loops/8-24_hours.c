@@ -1,19 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 
-void jack_bauer(void);
-
-/**
- * main - program start point
- *
- * Return: 0 if successful
- */
-int main(void)
-{
-	jack_bauer();
-	return (0);
-}
-
 /**
  * jack_bauer - IDK who he is and what he has to do with this
  */
