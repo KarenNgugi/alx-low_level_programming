@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <inttypes.h>
 
 /**
  * main - program start point
@@ -7,17 +8,17 @@
  */
 int main(void)
 {
-	unsigned long int a = 1, b = 2, sum, n = 0;
+	uintmax_t a = 1, b = 2, sum, n = 0;
 
 	printf("%lu, %lu, ", a, b);
 
-	while (n < 98)
+	while (n < 96)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
 
-		if (n != 97)
+		if (n != 95)
 			printf("%lu, ", sum);
 		else
 			printf("%lu", sum);
