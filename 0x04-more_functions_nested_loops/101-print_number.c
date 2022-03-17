@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+// task 101 - print_number
 
 /**
  * print_number - function that prints an integer
@@ -7,19 +8,23 @@
 
 void print_number(int n)
 {
-	unsigned int k = n;
+	putchar_many(n);
+}
 
+/**
+ * putchar_many - function that prints using putchar
+ * @n: value to be printed using putchar
+ */
+void putchar_many(int n)
+{
 	if (n < 0)
 	{
-		n *= -1;
-		k = n;
 		_putchar('-');
+		n = -n;
 	}
 
-	k = k / 10;
+	if (n / 10)
+		putchar_many(n / 10);
 
-	if (k != 0)
-		print_number(k);
-
-	_putchar((unsigned int) n % 10 + '0');
+	_putchar(n % 10 + '0');
 }
