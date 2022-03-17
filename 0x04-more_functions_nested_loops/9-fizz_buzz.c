@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - fizz buzz. if you don't know what it is, you have no business calling yourself a programmer
+ * main - fizz buzz. a classic
  * Return: 0 if successful
  */
 int main(void)
@@ -25,7 +25,7 @@ int main(void)
 		else
 			printf("%d ", i);
 	}
-	
+
 	putchar('\n');
 	return (0);
 }
