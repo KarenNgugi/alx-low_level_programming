@@ -6,7 +6,31 @@
 
 void print_number(int n)
 {
-	putchar_many(n);
+	int k, l;
+
+	if (n > -10 && n < 10)
+	{
+		if (n < 0)
+		{
+			_putchar('-');
+			_putchar(-n % 10 + '0');
+		}
+		else
+			_putchar(n % 10 + '0');
+	}
+
+	else
+	{
+		k = n / 10;
+
+		if (n < 0)
+			l = n % 10 * -1;
+		else
+			l = n % 10;
+
+		putchar_many(k);
+		_putchar(l + '0');
+	}
 }
 
 /**
