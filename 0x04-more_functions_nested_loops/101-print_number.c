@@ -15,14 +15,18 @@ void print_number(int n)
  */
 void putchar_many(int n)
 {
-	if (n < 0)
+	int k = n / 10;
+
+	if (k < 0)
 	{
 		_putchar('-');
-		n = -n;
+		k = -k;
 	}
 
-	if (n / 10)
-		putchar_many(n / 10);
+	if (k / 10)
+		putchar_many(k / 10);
 
+	_putchar(k % 10 + '0');
+	
 	_putchar(n % 10 + '0');
 }
