@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 /**
  * print_number - function that prints an integer
  * @n: value to be printed
@@ -7,9 +6,7 @@
 
 void print_number(int n)
 {
-	int k = abs(n);
-
-	putchar_many(k);
+	putchar_many(n);
 }
 
 /**
