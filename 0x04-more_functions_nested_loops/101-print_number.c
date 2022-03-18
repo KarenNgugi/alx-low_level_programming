@@ -1,5 +1,4 @@
-#include <stdio.h>
-// task 101 - print_number
+#include "main.h"
 
 /**
  * print_number - function that prints an integer
