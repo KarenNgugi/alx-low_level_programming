@@ -1,22 +1,30 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * rev_string - reverses a string
  * @s: string to be reversed
  */
-void rev_string (char *s)
+void rev_string(char *s)
 {
-	int len = strlen(s);
-	char str[len];
-	int i, j;
+	int i, j, count = 0, len = strlen(s) + 1;
+	char *z = (char*) calloc(len, sizeof(char));
 
-	for (i = len - 1; i >= 0; i--)
+	while (s[count] != '\0')
+		count++;
+
+	j = count - 1;
+
+	for (i = 0; i < count; i++)
 	{
-		for (j = 0; j < len; j++)
-		{
-			str[j] = i;
-		}
+		z[i] = s[j];
+		j--;
 	}
 
-	strcpy(s, str);
+	for (i = 0; i < count; i++)
+	{
+		s[i] = z[i];
+		j--;
+	}
+
 }
