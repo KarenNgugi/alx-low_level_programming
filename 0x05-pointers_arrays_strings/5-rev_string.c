@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 	int i, j, count = 0, len = strlen(s) + 1;
-	char *z = (char*) calloc(len, sizeof(char));
+	char *z = (char *) calloc(len, sizeof(char));
 
 	while (s[count] != '\0')
 		count++;
