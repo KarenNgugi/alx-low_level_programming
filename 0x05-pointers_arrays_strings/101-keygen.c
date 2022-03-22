@@ -15,3 +15,14 @@ int random_password()
 
 	return (password);
 }
+
+/**
+ * main - program start point
+ * Return: 0 when successful
+ */
+int main(void)
+{
+	random_password();
+
+	return (0);
+}
