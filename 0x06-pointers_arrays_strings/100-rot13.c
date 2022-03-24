@@ -25,8 +25,7 @@ char *rot13(char *c)
 		}
 	}
 
-	for (i = 0; i < strlen(c); i++)
-		c[i] = d[i];
+	strcpy(c, d);
 
 	return (c);
 }
