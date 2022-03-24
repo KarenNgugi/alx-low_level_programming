@@ -8,16 +8,17 @@
 
 char *rot13(char *c)
 {
-	unsigned int i = 0;
+	char l1[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char l2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	unsigned int i, j;
 
-	while (i < strlen(c))
+	for (i = 0; i < strlen(c); i++)
 	{
-		if (c[i] >= 65 && c[i] <= 90)
-			c[i] = ((c[i] - 65 + 13) % 26) + 65;
-		else if (c[i] >= 97 && c[i] <= 122)
-			c[i] = ((c[i] - 97 + 13) % 26) + 97;
+		for (j = 0; j < strlen(l1); j++)
+		{
+			if (c[i] == l1[j])
+				c[i] = l2[j];
+		}
 	}
-	i++;
-
 	return (c);
 }
