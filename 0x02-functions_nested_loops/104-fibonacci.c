@@ -11,13 +11,13 @@ int main(void)
 
 	printf("%lu, %lu, ", a, b);
 
-	while (n < 98)
+	while (n < 96)
 	{
 		sum = a + b;
 		a = b;
 		b = sum;
 
-		if (n != 97)
+		if (n != 95)
 			printf("%lu, ", sum);
 		else
 			printf("%lu", sum);
