@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <inttypes.h>
 
 /**
  * main - program start point
@@ -7,7 +8,7 @@
  */
 int main(void)
 {
-	unsigned long int a = 1, b = 2, sum, n = 0;
+	uintmax_t a = 1, b = 2, sum, n = 0;
 
 	printf("%lu, %lu, ", a, b);
 
