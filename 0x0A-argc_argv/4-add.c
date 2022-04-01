@@ -11,23 +11,21 @@
 int main(int argc, char *argv[])
 {
 	int i, res = 0, flag = 0;
-	
-	if (argc == 1)
-	{
-		printf("0\n");
-		return (0);
-	}
+
+	if (argc <= 1)
+		res = 0;
 
 	else
 	{
-	}
-	for (i = 1; i < argc; i++)
-	{
-		if (isdigit(argv[i]))
-			res += atoi(&(*argv[i]));
+		for (i = 1; i < argc; i++)
+		{
+			if (!(isdigit(*argv[i])))
+			{
+				flag = 1;
+			}
 
-		else
-			flag = 1;
+			res += atoi(&(*argv[i]));
+		}
 	}
 
 	if (flag == 1)
