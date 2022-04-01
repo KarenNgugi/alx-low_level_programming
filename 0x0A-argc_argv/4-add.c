@@ -8,6 +8,7 @@
  * @argv: array of arguments (strings) passed to main
  * Return: 0 if successful, otherwise 1
  */
+
 int main(int argc, char *argv[])
 {
 	int i, res = 0, flag = 0;
@@ -28,10 +29,16 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	if (flag == 1)
+	if (flag == 1 && res != 0)
 	{
 		printf("Error\n");
 		return (1);
+	}
+
+	else if (flag == 1 && res == 0)
+	{
+		printf("%d\n", res);
+		return (0);
 	}
 
 	else
