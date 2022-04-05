@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 			count += 1;
 	}
 
-	count += a; /* adding space for newline */
+	count += a + 1; /* adding space for newlines & null terminator*/
 
 	str = (char *)malloc(count * sizeof(char));
 
