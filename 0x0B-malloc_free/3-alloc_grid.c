@@ -25,26 +25,20 @@ int **alloc_grid(int width, int height)
 
 			if (array[i] == NULL)
 			{
-				free(array);
+				free(array[i]);
 				return (NULL);
 			}
 
 			for (j = 0; j < width; j++)
 				array[i][j] = 0;
 		}
-		while (i < height)
-		{
-			free(array[i]);
-			i++;
-		}
-		free(array);
 
 		return (array);
 
-		/* freeing memory 
+		/* freeing memory */
 		for (i = 0; i < height; i++)
 			free(array[i]);
 
-		free(array);*/
+		free(array);
 	}
 }
