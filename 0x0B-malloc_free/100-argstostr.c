@@ -8,39 +8,35 @@
  */
 char *argstostr(int ac, char **av)
 {
+	unsigned int i, j, k = 0, count = 0;
+	char *str;
+	unsigned int a = ac;
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	else
+	/* count total number of characters */
+	for (i = 0; i < a; i++)
 	{
-		/*
-		int i;
-		char *s = malloc(ac * sizeof(char));
-
-		for (i = 0; i < ac; i++)
-		{
-			s[i] = &av[i] + '\n';
-		}
-		return (s);
-		free(s);*/
+		for (j = 0; j < strlen(av[i]); j++)
+			count += 1;
 	}
-}
 
-test
-{
-	    char *av[] = {"./a", "this", "is", "karen"};
-    int ac = 4;
-    int i = 0, j = 0, count = 0;
+	count += a; /* adding space for newline */
 
-    for (i = 0; i < ac; i++)
-    {
-        for (j = 0; j < strlen(av[i]); j++)
-        {
-            
-            printf("%c", av[i][j]);
-        }
-        printf("\n");
-    }
-    
-    char *z = malloc(count * sizeof(char));
+	str = (char *)malloc(count * sizeof(char));
+
+	for (i = 0; i < a; i++)
+	{
+		for (j = 0; j <= strlen(av[i]); j++)
+		{
+			if (j == strlen(av[i]))
+				str[k++] = '\n';
+			else
+				str[k++] += av[i][j];
+		}
+	}
+
+	return (str);
+	free(str);
 }
