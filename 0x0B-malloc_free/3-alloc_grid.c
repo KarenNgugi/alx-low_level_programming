@@ -14,14 +14,14 @@ int **alloc_grid(int width, int height)
 	else
 	{
 		int i, j;
-		int **array = malloc(height * sizeof(int *));
+		int **array = (int **)malloc(height * sizeof(int *));
 
 		if (array == NULL)
 			return (NULL);
 
 		for (i = 0; i < height; i++)
 		{
-			array[i] = malloc(width * sizeof(int));
+			array[i] = (int *)malloc(width * sizeof(int));
 
 			if (array[i] == NULL)
 			{
