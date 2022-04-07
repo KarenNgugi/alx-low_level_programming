@@ -1,1 +1,1 @@
-# Low Level Programming using the C programming langugae
+# Low Level Programming using the C programming language
