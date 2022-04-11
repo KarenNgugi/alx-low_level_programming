@@ -1,4 +1,7 @@
-#ifndef ABS
-#define ABS(x) (((x) < 0) ? ((x) * -1) : (x))
+#ifndef abs
+#define abs
 
-#endif /* ABS */
+#define ABS(x) ((x) < 0 ? -(x) : (x))
+
+#endif /* abs */
+
