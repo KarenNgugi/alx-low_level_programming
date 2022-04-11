@@ -1,11 +1,11 @@
-#include <stdlib.h>
-#include <stdio.h>
-
 #ifndef DOG_H
 #define DOG_H
 
 /**
  * struct dog - struct to contain dog details
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: dog owner
  */
 
 struct dog
