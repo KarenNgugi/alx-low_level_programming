@@ -2,33 +2,47 @@
 #include <string.h>
 
 /**
- * new_dog - creates new dog
+ * scpy - copies string from s2 to s1
+ * @s1: string to be copied to
+ * @s2: string to be copied from
+ * Return: copied string
+ */
+char *scpy(char *s1, char *s2)
+{
+	char *s = s1;
+
+	while (*s2)
+		*s1++ = *s2++;
+
+	*s1 = 0;
+	return (s);
+}
+
+/**
+ * new_dog - create new dog
  * @name: name of dog
  * @age: age of dog
- * @owner: dog owner
+ * @owner: dog's owner
  * Return: dog struct
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *name_copy, *owner_copy;
 	dog_t *dog = malloc(sizeof(dog_t));
 
 	if (dog == NULL)
 		return (NULL);
 
-	dog->name = name;
+	dog->name = malloc((strlen(name) + 1) * sizeof(char));
+	if (dog->name == NULL)
+		return (NULL);
+
+	dog->owner = malloc((strlen(owner) + 1) * sizeof(char));
+	if (dog->owner == NULL)
+		return (NULL);
+
+	dog->name = scpy(dog->name, name);
 	dog->age = age;
-	dog->owner = owner;
-
-	name_copy = malloc(strlen(name) * sizeof(char));
-	if (name_copy == NULL)
-		return (NULL);
-	name_copy = name;
-
-	owner_copy = malloc(strlen(owner) * sizeof(char));
-	if (owner_copy == NULL)
-		return (NULL);
-	owner_copy = owner;
+	dog->owner = scpy(dog->owner, owner);
 
 	return (dog);
 }
