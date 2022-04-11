@@ -130,7 +130,7 @@ File: `9-strcpy.c` <br>
 - You are not allowed to use `long`
 - You are not allowed to declare new variables of “type” array
 - You are not allowed to hard-code special values
-- We will use the `-fsanitize=signed-integer-overflow` `gcc` flag to compile your code.
+- We will use the `-fsanitize=signed-integer-overflow` `gcc` flag to compile your code. 
 
 FYI: The standard library provides a similar function: `atoi`. Run `man atoi` to learn more.
 
