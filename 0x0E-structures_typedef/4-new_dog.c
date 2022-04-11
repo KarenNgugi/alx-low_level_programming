@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <string.h>
 
 /**
  * new_dog - creates new dog
@@ -19,7 +20,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog->age = age;
 	dog->owner = owner;
 
+	name_copy = malloc(strlen(name) * sizeof(char));
+	if (name_copy == NULL)
+		return (NULL);
 	name_copy = name;
+
+	owner_copy = malloc(strlen(owner) * sizeof(char));
+	if (owner_copy == NULL)
+		return (NULL);
 	owner_copy = owner;
 
 	return (dog);
