@@ -28,6 +28,7 @@ char *scpy(char *s1, char *s2)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog = malloc(sizeof(dog_t));
+	char *dog_name, *dog_owner;
 
 	if (dog == NULL)
 	{
@@ -35,26 +36,32 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	dog->name = malloc((strlen(name) + 1) * sizeof(char));
-	if (dog->name == NULL)
+	dog_name = (char *)malloc((strlen(name) + 1) * sizeof(char));
+	if (dog_name == NULL)
 	{
-		free(dog->name);
+		/*free(dog_name);*/
+		free(dog);
 		return (NULL);
 	}
+	else
+		dog->name = scpy(dog_name, name);
 
-	dog->owner = malloc((strlen(owner) + 1) * sizeof(char));
-	if (dog->owner == NULL)
+	dog_owner = (char *)malloc((strlen(owner) + 1) * sizeof(char));
+	if (dog_owner == NULL)
 	{
-		free(dog->owner);
+		/*free(dog_owner);*/
+		free(dog_name);
+		free(dog);
 		return (NULL);
 	}
+	else
+		dog->owner = scpy(dog_owner, owner);
 
-	dog->name = scpy(dog->name, name);
 	dog->age = age;
-	dog->owner = scpy(dog->owner, owner);
 
-	free(dog->owner);
-	free(dog->name);
-	free(dog);
 	return (dog);
+
+	free(dog_owner);
+	free(dog_name);
+	free(dog);
 }
