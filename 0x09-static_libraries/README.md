@@ -1,4 +1,4 @@
-# C - argc, argv
+# C - Static libraries
 
 ## Learning Objectives
 ### General
