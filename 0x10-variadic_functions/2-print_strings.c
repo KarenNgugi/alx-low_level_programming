@@ -11,7 +11,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list args;
 	char *value;
-	
+
 	if (n == 0)
 	{
 		printf("\n");
