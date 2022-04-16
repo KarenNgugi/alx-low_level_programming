@@ -8,17 +8,12 @@
 
 void print_all(const char * const format, ...)
 {
-	unsigned int i = 0;
-	char *s, *conditions = "cifs";
+	unsigned int i = 0, j;
+	char *s, *cond = "cifs";
 	va_list args;
 
-	if (format == NULL)
-	{
-		printf("\n");
-		return;
-	}
 	va_start(args, format);
-	while (i < strlen(format))
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
@@ -29,7 +24,7 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(args, int));
 				break;
 			case 'f':
-				printf("%f", va_arg(args, double));
+				printf("%f", va_args(args, double));
 				break;
 			case 's':
 				s = va_arg(args, char *);
@@ -42,8 +37,13 @@ void print_all(const char * const format, ...)
 				continue;
 				break;
 		}
-		if ((i != strlen(format) - 1) && (conditions[i]))
-			printf(", ");
+		j = 0;
+		while (cond[j])
+		{
+			if (cond[j] == format[i] && i < strlen(format) - 1)
+				printf(", ");
+			j++;
+		}
 		i++;
 	}
 	putchar('\n');
