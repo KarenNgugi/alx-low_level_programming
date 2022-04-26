@@ -7,17 +7,17 @@
  */
 size_t print_list(const list_t *h)
 {
-	int i, n = 0, count = 0;
+	unsigned int i = 0;
 
-	if (h->str == NULL)
+	while (h)
 	{
-		printf("[0] (nil)");
-		return;
-	}
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%d] %s\n", h->len, h->str);
 
-	for (i = 0; h->next; i++)
-	{
-		count++;
+		i++;
+		h = h->next;
 	}
-	return (count);
+	return (i);
 }
