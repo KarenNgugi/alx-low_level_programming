@@ -8,6 +8,7 @@
 
 /* extra functions */
 unsigned int to_decimal(const char *c);
+void binarize(unsigned long int n);
 
 int _putchar(char c);
 
@@ -21,3 +22,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 int get_endianness(void);
 
 #endif /* MAIN_H */
+
+

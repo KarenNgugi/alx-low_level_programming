@@ -45,6 +45,9 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int result, i, j = 0, flag = 0;
 	char *s = malloc(strlen(b) * sizeof(char));
 
+	if (s == NULL)
+		free(s);
+	
 	if (b == NULL)
 		result = 0;
 
@@ -70,6 +73,6 @@ unsigned int binary_to_uint(const char *b)
 	if (s != NULL && flag == 0)
 		result = to_decimal(s);
 
-	return (result);
 	free(s);
+	return (result);
 }
