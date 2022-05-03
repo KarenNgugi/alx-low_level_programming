@@ -117,52 +117,8 @@ int _vprintf(const char *format, va_list args)
 		}
 		else if (state == 1)
 		{
-		switch (*format)
-		{
-			case 'c':
-				putchar(va_arg(args, int));
-				break;
-			case 's':
-				s = va_arg(args, const char *);
-				while (*s)
-					putchar(*s++);
-				break;
-			case 'i':
-			case 'd':
-				putchar_int(va_arg(args, int));
-				break;
-			case 'u':
-				u = va_arg(args, int);
-				print_unsigned(u, 10, num_buf, 0);
-				break;
-			case 'x':
-				u = va_arg(args, int);
-				print_unsigned(u, 16, num_buf, 0);
-				break;
-			case 'X':
-				u = va_arg(args, int);
-				print_unsigned(u, 16, num_buf, 1);
-				break;
-			case 'o':
-				u = va_arg(args, int);
-				print_unsigned(u, 8, num_buf, 0);
-				break;
-			case 'p':
-				putchar('0');
-				putchar('x');
-				p = va_arg(args, void *);
-				putchar_num((uint64_t) p, 16, num_buf, 0);
-				for (i = 0; num_buf[i]; i++)
-					putchar(num_buf[i]);
-				break;
-			case '%':
-				putchar('%');
-				break;
-			default:
-				putchar('%');
-				putchar(*format);
-		}
-		state = 0;
+			_vprintf_state_1(format, args);
+			state = 0;
 		}
 		format++;
 	}
