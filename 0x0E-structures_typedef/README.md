@@ -34,7 +34,7 @@ File: `dog.h` <br>
 - Prototype: `void init_dog(struct dog *d, char *name, float age, char *owner);`
 
 GitHub repository: `alx-low_level_programming` <br>
-Directory: `0x0C-more_malloc_free` <br>
+Directory: `0x0E-structures_typedef` <br>
 File: `1-init_dog.c` <br>
 
 ### 2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad
@@ -46,14 +46,14 @@ File: `1-init_dog.c` <br>
 - If `d` is `NULL` print nothing.
 
 GitHub repository: `alx-low_level_programming` <br>
-Directory: `0x0C-more_malloc_free` <br>
+Directory: `0x0E-structures_typedef` <br>
 File: `2-print_dog.c` <br>
 
 ### 3. Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read
 **Description:** Define a new type `dog_t` as a new name for the type `struct dog`.
 
 GitHub repository: `alx-low_level_programming` <br>
-Directory: `0x0C-more_malloc_free` <br>
+Directory: `0x0E-structures_typedef` <br>
 File: `dog.h` <br>
 
 ### 4. A door is what a dog is perpetually on the wrong side of
@@ -63,7 +63,7 @@ File: `dog.h` <br>
 - Return `NULL` if the function fails
 
 GitHub repository: `alx-low_level_programming` <br>
-Directory: `0x0C-more_malloc_free` <br>
+Directory: `0x0E-structures_typedef` <br>
 File: `4-new_dog.c` <br>
 
 ### 5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg
@@ -71,5 +71,5 @@ File: `4-new_dog.c` <br>
 - Prototype: `void free_dog(dog_t *d);`
 
 GitHub repository: `alx-low_level_programming` <br>
-Directory: `0x0C-more_malloc_free` <br>
+Directory: `0x0E-structures_typedef` <br>
 File: `5-free_dog.c` <br>
