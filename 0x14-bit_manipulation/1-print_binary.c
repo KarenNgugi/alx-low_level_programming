@@ -7,37 +7,35 @@
  */
 void binarize(unsigned long int n)
 {
-	unsigned int count = 1, j = 0, num = n;
-	int i;
-	char *s;
+	int num = n, count = 0, j;
+	char *digit, *res;
 
-	/* get length of number */
-	while (num / 10)
+    /* number of digits the number will have */
+	while (num > 0)
 	{
-		count++;
-		num = num / 10;
+		count += 1;
+		num >>= 1;
 	}
-	/* create string */
-	s = malloc(count * sizeof(char));
-	if (s == NULL)
-	{
-		free(s);
-		return;
-	}
-	/* divide by 2 and add remainders */
+
+	res = malloc(count * sizeof(char));
+	if (res == NULL)
+		free(res);
+
 	while (n > 0)
 	{
-		s[j] = n % 2 + '0';
-		j++;
-		n = n / 2;
+		digit = ((n & 1) == 0 ? "0" : "1");
+		res = strcat(res, digit);
+		n >>= 1;
 	}
-	/* print in reverse */
 
-	i = strlen(s) - 1;
-	for (; i >= 0; i--)
-		printf("%c", s[i]);
+	j = count - 1;
+	while (j >= 0)
+	{
+		putchar(res[j]);
+		j--;
+	}
 
-	free(s);
+	free(res);
 }
 
 /**
