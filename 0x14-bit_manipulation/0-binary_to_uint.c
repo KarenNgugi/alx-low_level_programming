@@ -43,11 +43,12 @@ unsigned int to_decimal(const char *c)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result, i, j = 0, flag = 0;
+	char *s;
 
 	if (b == NULL)
 		result = 0;
 
-	char *s = malloc(strlen(b) * sizeof(char));
+	s = malloc(strlen(b) * sizeof(char));
 
 	if (s == NULL)
 		free(s);
