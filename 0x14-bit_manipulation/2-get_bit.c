@@ -55,9 +55,23 @@ char *dec_to_bin(long int n)
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int answer;
+	int i, j = 0, answer;
 	char *binary = dec_to_bin(n);
+	char *reverse_binary = malloc(strlen(binary) * sizeof(char));
 
-	answer = binary[index] - '0';
+	if (reverse_binary == NULL)
+		free(reverse_binary);
+
+	i = strlen(binary) - 1;
+
+	while (i >= 0)
+	{
+		reverse_binary[j] = binary[i];
+		i--;
+		j++;
+	}
+
+
+	answer = reverse_binary[index] - '0';
 	return (answer);
 }
