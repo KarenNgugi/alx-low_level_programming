@@ -74,4 +74,9 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	answer = reverse_binary[index] - '0';
 	return (answer);
+
+	if ((answer != 0) || (answer != 1))
+		return (1);
+	else
+		return (answer);
 }
