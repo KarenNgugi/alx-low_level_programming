@@ -21,6 +21,8 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 int get_endianness(void);
 
+/* extras */
+char *dec_to_bin(long int n);
 #endif /* MAIN_H */
 
 
