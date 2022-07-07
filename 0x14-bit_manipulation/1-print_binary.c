@@ -7,7 +7,7 @@
  */
 void binarize(unsigned long int n)
 {
-	int num = n, count = 0, j;
+	long int num = n, count = 0, j;
 	char *digit, *res;
 
     /* number of digits the number will have */
