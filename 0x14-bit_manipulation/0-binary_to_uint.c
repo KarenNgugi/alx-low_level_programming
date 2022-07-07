@@ -46,7 +46,10 @@ unsigned int binary_to_uint(const char *b)
 	char *s;
 
 	if (b == NULL)
+	{
 		result = 0;
+		return (result);
+	}
 
 	s = malloc(strlen(b) * sizeof(char));
 
