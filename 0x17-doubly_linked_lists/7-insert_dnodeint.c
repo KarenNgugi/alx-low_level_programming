@@ -31,14 +31,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	dlistint_t *head = *h, *p;
 	unsigned int count = 0;
 
-	if (node == NULL)
+	if ((node == NULL) || (idx >= dlistint_len(head)))
 	{
 		free(node);
 		return (NULL);
 	}
-
-	if (idx >= dlistint_len(head))
-		return (NULL);
 
 	else
 	{
