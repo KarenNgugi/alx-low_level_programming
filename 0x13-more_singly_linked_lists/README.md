@@ -1,4 +1,4 @@
-# C - Variadic functions
+# C - More singly linked lists
 
 ## Learning Objectives
 ### General
