@@ -1,1 +1,31 @@
-# Low Level Programming using the C programming language
+# Low level programming with C
+
+## Topics covered:
+### 0. [Hello, World](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x00-hello_world)
+### 1. [Variables, if, else, while](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x01-variables_if_else_while)
+### 2. [Functions, nested loops](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x02-functions_nested_loops)
+### 3. [Debugging](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x03-debugging)
+### 4. [More functions, more nested loops](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x04-more_functions_nested_loops)
+### 5. [Pointers, arrays, and strings](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x05-pointers_arrays_strings)
+### 6. [More pointers, arrays, and strings](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x06-pointers_arrays_strings)
+### 7. [Even more pointers, arrays, and strings](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x07-pointers_arrays_strings)
+### 8. [Recursion](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x08-recursion)
+### 9. [Static libraries](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x09-static_libraries)
+### 10. [argc, argv](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x0A-argc_argv)
+### 11. [malloc, free](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x0B-malloc_free)
+### 12. [More malloc, free](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x0C-more_malloc_free)
+### 13. [Preprocessor](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x0D-preprocessor)
+### 14. [Structures, typedef](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x0E-structures_typedef)
+### 15. [Function pointers](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x0F-function_pointers)
+### 16. [Variadic functions](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x10-variadic_functions)
+### 17. [printf](https://github.com/KarenNgugi/printf)
+### 18. [Singly linked lists](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x12-singly_linked_lists)
+### 19. [More singly linked lists](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists)
+### 20. [Bit manipulation](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x14-bit_manipulation)
+### 21. [File I/O](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x15-file_io)
+### 22. Simple shell
+### 23. [Doubly linked lists](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x17-doubly_linked_lists)
+### 24. [Dynamic libraries](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x18-dynamic_libraries)
+### 25. Stacks, Queues - LIFO, FIFO
+### 26. [Hash tables](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x1A-hash_tables)
+### 27. [Sorting algorithms & Big O](https://github.com/KarenNgugi/sorting_algorithms)
