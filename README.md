@@ -29,3 +29,4 @@
 ### 25. Stacks, Queues - LIFO, FIFO
 ### 26. [Hash tables](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x1A-hash_tables)
 ### 27. [Sorting algorithms & Big O](https://github.com/KarenNgugi/sorting_algorithms)
+### 28. [Binary trees](https://github.com/KarenNgugi/binary_trees/blob/main/10-binary_tree_depth.c)
