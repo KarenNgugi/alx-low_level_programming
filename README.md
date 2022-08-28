@@ -23,10 +23,11 @@
 ### 19. [More singly linked lists](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists)
 ### 20. [Bit manipulation](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x14-bit_manipulation)
 ### 21. [File I/O](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x15-file_io)
-### 22. Simple shell
+### 22. [Simple shell](https://github.com/MwangiGregory/simple_shell)
 ### 23. [Doubly linked lists](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x17-doubly_linked_lists)
 ### 24. [Dynamic libraries](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x18-dynamic_libraries)
-### 25. Stacks, Queues - LIFO, FIFO
+### 25. [Stacks, Queues - LIFO, FIFO](https://github.com/KarenNgugi/monty)
 ### 26. [Hash tables](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x1A-hash_tables)
 ### 27. [Sorting algorithms & Big O](https://github.com/KarenNgugi/sorting_algorithms)
-### 28. [Binary trees](https://github.com/KarenNgugi/binary_trees/blob/main/10-binary_tree_depth.c)
+### 28. [Makefiles](https://github.com/KarenNgugi/alx-low_level_programming/tree/master/0x1C-makefiles)
+### 29. [Binary trees](https://github.com/KarenNgugi/binary_trees)
