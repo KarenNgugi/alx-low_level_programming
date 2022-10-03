@@ -2,22 +2,22 @@
 
 /**
  * print_array - print array elements
- * 
+ *
  * @array: array to print
+ * @left: leftmost element in given array
+ * @right: rightmost element in given array
  *
  * Return: nothing
  */
-void print_array(int *array, size_t size)
+void print_array(int *array, int left, int right)
 {
-	size_t i;
-
 	printf("Searching in array: ");
-	for (i = 0; i < size; i++)
+	for ( ; left <= right; left++)
 	{
-		if (i != size - 1)
-			printf("%d, ", array[i]);
+		if (left != right)
+			printf("%d, ", array[left]);
 		else
-			printf("%d\n", array[i]);
+			printf("%d\n", array[left]);
 	}
 }
 
@@ -34,24 +34,24 @@ void print_array(int *array, size_t size)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int low = array[0];
-	int high = array[size - 1];
+	int left = 0;
+	int right = size - 1;
 	int mid;
-	
-	while (low <= high)
-	{
-		print_array(array, size);
 
-		mid = low + (high - low) / 2;
+	while (left <= right)
+	{
+		print_array(array, left, right);
+
+		mid = left + (right - left) / 2;
 
 		if (array[mid] == value)
 			return (mid);
 
 		else if (array[mid] < value)
-			low = mid + 1;
+			left = mid + 1;
 
 		else
-			high = mid - 1;
+			right = mid - 1;
 	}
 
 	return (-1);
